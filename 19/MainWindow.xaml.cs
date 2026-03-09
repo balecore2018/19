@@ -20,6 +20,7 @@ namespace _19
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
 
         public enum pages
         {
@@ -29,12 +30,12 @@ namespace _19
         public void OpenPage(pages _pages)
         {
             if (_pages == pages.setting)
-                frame.Navigate(new Pages.Settings(this));
+                frame.Navigate(new Pages.Settings());
         }
         public MainWindow()
         {
             InitializeComponent();
-
+            init = this;
             OpenPage(pages.setting);
         }
     }

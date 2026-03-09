@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_19.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="410" d:DesignWidth="782"
+      d:DesignHeight="410" d:DesignWidth="900.509"
       Title="Settings">
 
     <Grid Background="White">
@@ -17,17 +17,17 @@
         <Grid Margin="0,60,0.4,-0.4">
             <Border BorderBrush="Black" BorderThickness="1" Height="54" Margin="10,21,10.4,0" VerticalAlignment="Top">
                 <Grid>
-                    <TextBlock x:Name="tb_database" Height="23" Margin="9,19,135,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                    <Button Click="OpenDataBase" Content="Выбрать" HorizontalAlignment="Right" Margin="0,19,10,0"
+                    <TextBlock x:Name="tb_database" Margin="9,19,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="615" Height="23" VerticalAlignment="Top"/>
+                    <Button Click="OpenDataBaza" Content="Выбрать" HorizontalAlignment="Right" Margin="0,19,129,0"
                             VerticalAlignment="Top" Width="120" Height="23"/>
                 </Grid>
             </Border>
 
-            <Label Content="База данных: " HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"
-                   Background="White"/>
+            <Label Content="База данных: " Margin="20,10,0,0" VerticalAlignment="Top"
+                   Background="White" HorizontalAlignment="Left" Width="84"/>
             <Border BorderBrush="Black" BorderThickness="1" Height="45" Margin="10,96,10,0" VerticalAlignment="Top">
                 <Grid>
-                    <ComboBox SelectionChanged="SelectScreenResolution" Margin="10,10,9.8,0" VerticalAlignment="Top">
+                    <ComboBox SelectionChanged="SelectScreenResolution" Margin="10,0,128,0" VerticalAlignment="Center">
                         <TextBlock>800 x 450</TextBlock>
                         <TextBlock>800 x 600</TextBlock>
                         <TextBlock>1024 x 768</TextBlock>
@@ -54,15 +54,15 @@
             <Border BorderBrush="Black" BorderThickness="1" Height="100" Margin="10,160,10,0" VerticalAlignment="Top">
                 <Grid>
                     <Grid Margin="0.2,0.2,-0.4,51.2">
-                        <Label Content="Цвет приложения: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                        <Grid x:Name="gr_appliacation" Margin="127,10,584,0" Background="Black" Height="27" VerticalAlignment="Top"></Grid>
-                            <Button Click="SelectColorApplication" Content="Выбрать" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
-                        </Grid>
+                        <Label Content="Цвет приложения: " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                        <Grid x:Name="gr_appliacation" Margin="127,0,0,0" Background="Black" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Width="49"></Grid>
+                        <Button Click="SelectColorApplication" Content="Выбрать" HorizontalAlignment="Left" Margin="182,0,0,0" VerticalAlignment="Center" Width="150" Height="26"/>
+                    </Grid>
 
                     <Grid Margin="0,41,-0.2,10.4">
-                        <Label Content="Цвет текста: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                        <Grid Margin="127,10,584,0" Background="Black" Height="27" VerticalAlignment="Top"></Grid>
-                        <Button Click="SelectColorText" Content="Выбрать" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
+                        <Label Content="Цвет текста: " HorizontalAlignment="Left" Margin="9,0,0,0" VerticalAlignment="Center"/>
+                        <Grid Margin="127,0,0,0" Background="Black" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Width="49"></Grid>
+                        <Button Click="SelectColorText" Content="Выбрать" HorizontalAlignment="Left" Margin="182,0,0,0" VerticalAlignment="Center" Width="150" Height="26"/>
                     </Grid>
                 </Grid>
             </Border>
@@ -70,7 +70,7 @@
             <Label Content="Цвета: " HorizontalAlignment="Left" Margin="20,146,0,0" VerticalAlignment="Top" Background="White"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="63" Margin="10,277,0,0" VerticalAlignment="Top" Width="762">
                 <Grid>
-                    <Label Content="Segoe UI" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="614"/>
+                    <Label Content="Segoe UI" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="614"/>
                     <Button Click="SelectFonts" Content="Выбрать" HorizontalAlignment="Left" Margin="629,10,0,0" VerticalAlignment="Top" Width="121" Height="25"/>
                 </Grid>
             </Border>
